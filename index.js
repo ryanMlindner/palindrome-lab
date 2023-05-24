@@ -23,8 +23,7 @@ function palindromeAlgo(string) {
     if (index === reverseIndex) {
       break;
     }
-    comparisonCount += 1; //accessing 2 values of the string, assuming the programmatic time cost
-    //of the algorithm is accessing a character
+    comparisonCount += 1; //assuming complexity relies on number of comparisons
     if (string.charAt(index) !== string.charAt(reverseIndex)) {
       palindrome = false;
       break;
